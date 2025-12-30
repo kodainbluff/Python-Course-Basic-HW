@@ -1,0 +1,6 @@
+print("This program will calculate the price of an item with applied discount")
+og_price = int(input("Please enter the price of an item: "))
+discount = int(input("Please enter the discount: "))
+n_price = og_price - (og_price * (discount / 100))
+print (f"You have entered price ${og_price} and the discount {discount}%. The new price is ${n_price}")
+input("Press any key to exit.")

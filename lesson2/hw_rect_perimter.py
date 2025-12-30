@@ -1,0 +1,6 @@
+print("This program will calculate the perimetr of a rectangle.")
+length = int(input("Please enter the length of a rectangle in cm: "))
+width = int(input("Please enter the width of a rectangle in cm: "))
+perimeter = 2 * (length + width)
+print(f"You have entered next parameters: \nLength: {length}cm \nWidth: {width}cm \nCalculated perimeter is: {perimeter}cm")
+input("Press any key to exit")

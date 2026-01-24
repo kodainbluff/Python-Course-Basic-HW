@@ -1,0 +1,13 @@
+def correct_sentence(user_input):
+    if not user_input[-1] == ".":
+        user_input += "."
+    if not user_input[0].isupper():
+        user_input = user_input[0].upper() + user_input[1:]
+    return user_input
+
+assert correct_sentence("greetings, friends") == "Greetings, friends.", 'Test1'
+assert correct_sentence("hello") == "Hello.", 'Test2'
+assert correct_sentence("Greetings. Friends") == "Greetings. Friends.", 'Test3'
+assert correct_sentence("Greetings, friends.") == "Greetings, friends.", 'Test4'
+assert correct_sentence("greetings, friends.") == "Greetings, friends.", 'Test5'
+print('ОК')
